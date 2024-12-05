@@ -1,0 +1,3977 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@font-face {
+    font-family: gigasans;
+    src: url(Fontspring-DEMO-gigasans-bold.otf);
+    /*Logo Font*/
+}
+
+@font-face {
+    font-family: Art;
+    src: url(Fonseca-Regular.otf);
+    /*Navigation*/
+}
+
+@font-face {
+    font-family: Malberg;
+    src: url(Malberg-Bold.ttf);
+    /*Titles*/
+}
+
+@font-face {
+    font-family: Virtuos;
+    src: url(Virtuos.otf);
+    /*Banner text and game name/price */
+}
+
+@font-face {
+    font-family: cosmata;
+    src: url(Fontspring-DEMO-cosmata-bold.otf);
+    /*For buttons only*/
+}
+
+@font-face {
+    font-family: cosmata regular;
+    src: url(Fontspring-DEMO-cosmata-regular.otf);
+    /*for regular text only*/
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #1c1b1d;
+}
+
+/*----------------------------------------Common header CSS-------------------------------------------*/
+
+/*---------------Navigation bar----------------*/
+
+
+.NavContainer {
+    position: absolute;
+    left: 29%;
+    top: 0%;
+    width: 40%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavContainer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.NavContainer a {
+    color: white;
+    text-decoration: none;
+    font-family: Art;
+    text-shadow: 0px 0px 3px #FF5405;
+
+}
+
+.NavContainer a:hover {
+    color: #FF5405;
+}
+
+.logo {
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    height: 80px;
+    width: 300px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #FF5405;
+    font-family: gigasans;
+}
+
+/*Search box*/
+
+.searchBox {
+    position: absolute;
+    top: 2.5%;
+    left: 70%;
+    background: #FF5405;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 70px;
+    padding: 0 6px;
+    color: black;
+    transition: width 0.3s;
+}
+
+.searchBox:hover {
+    width: 240px;
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 40px;
+    width: 70px;
+    transition: width 0s;
+
+}
+
+.searchInput:hover {
+    width: 230px;
+}
+
+::placeholder {
+    color: #000000;
+}
+
+/*footer*/
+
+.footercontainer {
+    position: absolute;
+    top: 300%;
+    height: 350px;
+    width: 1903px;
+    background-color: #2e2e2e;
+}
+
+
+.footerlogo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 300px;
+}
+
+.footerlogo a {
+    text-decoration: none;
+    color: #FF5405;
+    font-family: gigasans;
+}
+
+.footerimg1 {
+    background-image: url(images/tracer.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 68%;
+    top: 4.5%;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+    transform: rotate(0.1deg);
+}
+
+.footerimg2 {
+    background-image: url(images/pharah.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    width: 300px;
+    height: 300px;
+    background-size: 300px 300px;
+}
+
+
+
+.instagram {
+    position: absolute;
+    top: 75%;
+    left: 40.7%;
+    background-image: url(images/instagram\ png.png);
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+
+.twitter {
+    position: absolute;
+    top: 75%;
+    left: 44.7%;
+    background-image: url(images/Twitter\ png.png);
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+
+.facebook {
+    position: absolute;
+    top: 75%;
+    left: 48.7%;
+    background-image: url(images/Facebbok\ png.png);
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+
+.whatsapp {
+    position: absolute;
+    top: 75%;
+    left: 52.7%;
+    background-image: url(images/Whatsapp\ png.png);
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+}
+
+.footertext {
+    color: white;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+
+}
+
+.footertext p {
+    text-align: center;
+    font-family: cosmata regular;
+    font-size: 2vh;
+}
+
+/*---------------Header Background----------------*/
+
+.homebg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/res4banner.jpg) no-repeat;
+}
+
+.bannertext {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.bannertext h1 {
+    color: white;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+.bannertext2 {
+    position: absolute;
+    top: 47%;
+    left: 22%;
+}
+
+.bannertext2 h1 {
+    color: #FF5405;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+/*----------------------------------------END of Common header CSS-------------------------------------------*/
+
+/*------------------------------------------Bestseller section------------------------------------------------*/
+
+/*Best seller view all button*/
+
+.btn1 {
+    position: absolute;
+    top: 80%;
+    left: 80.2%;
+}
+
+.btn1 a {
+    color: white;
+    background-color: #3f3e3e;
+    border: solid 1px #3f3e3e;
+    border-radius: 35px;
+    padding: 12px;
+    text-decoration: none;
+    font-family: cosmata;
+    transition: background 0.3s;
+    align-items: center;
+}
+
+.btn1 a:hover {
+    color: #000000;
+    background-color: #FF5405;
+    border: #FF5405;
+}
+
+/*New releases view all button*/
+
+.btn2 {
+    position: absolute;
+    top: 220%;
+    left: 80.2%;
+}
+
+.btn2 a {
+    color: white;
+    background-color: #3f3e3e;
+    border: solid 1px #3f3e3e;
+    border-radius: 35px;
+    padding: 12px;
+    text-decoration: none;
+    font-family: cosmata;
+    transition: background 0.3s;
+    align-items: center;
+}
+
+.btn2 a:hover {
+    color: #000000;
+    background-color: #FF5405;
+    border: #FF5405;
+}
+
+/*-------------------------------------------*/
+
+.BestsellerText {
+    position: absolute;
+    top: 74.5%;
+    left: 15%;
+}
+
+.BestsellerText h3 {
+    color: white;
+    font-size: 4vh;
+    font-family: Malberg;
+    letter-spacing: 0.5px;
+}
+
+/*Games Div Common CSS*/
+
+.GameName {
+    position: absolute;
+    top: 78%;
+    left: 7%;
+}
+
+
+.GameName h2 {
+    color: white;
+    font-size: 2vh;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+}
+
+.GamePrice {
+    position: absolute;
+    top: 78%;
+    left: 78%;
+}
+
+
+.GamePrice h2 {
+    color: white;
+    font-size: 2vh;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+}
+
+/*Resident evil 4 Section*/
+
+#child1 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    background-image: url(images/res4.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#child1:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#child1 img {
+    width: 377.33px;
+    height: 216.58px;
+}
+
+/*Elden ring Section*/
+
+#child2 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    background-image: url(images/elden\ ring.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#child2:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#child2 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*God of war section*/
+
+#child3 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 90%;
+    left: 65%;
+    background-image: url(images/god\ of\ war.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#child3:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#child3 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Last of us Section*/
+
+#child4 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 125%;
+    left: 15%;
+    background-image: url(images/lastofus.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#child4:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#child4 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Call of duty Section*/
+
+#child5 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 125%;
+    left: 40%;
+    background-image: url(images/cod.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#child5:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#child5 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Fifa 23 Section*/
+
+#child6 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 125%;
+    left: 65%;
+    background-image: url(images/fifa.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#child6:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#child6 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+.homegamebanner1 {
+    position: absolute;
+    top: 160%;
+    height: 400px;
+    width: 1903px;
+    background: url(images/sifu\ banner.jpg) no-repeat;
+
+}
+
+.bannertext3 {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+.bannertext3 h1 {
+    color: white;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+.bannertext4 {
+    position: absolute;
+    top: 45%;
+    left: 28.5%;
+}
+
+.bannertext4 h1 {
+    color: #FF5405;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+/*------------------------------------------------------------------------New Releases Section-------------------------------------------------------*/
+
+.NewReleasesText {
+    position: absolute;
+    top: 214.5%;
+    left: 15%;
+}
+
+.NewReleasesText h3 {
+    color: white;
+    font-size: 4vh;
+    font-family: Malberg;
+    letter-spacing: 0.5px;
+}
+
+/*Resident evil 4 (New Releaese) Section*/
+
+
+#newchild1 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 230%;
+    left: 15%;
+    background-image: url(images/res4.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#newchild1:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#newchild1 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Hogwarts Legacy Section*/
+
+#newchild2 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 230%;
+    left: 40%;
+    background-image: url(images/hogwarts.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#newchild2:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#newchild2 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Assasin creed Section*/
+
+#newchild3 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 230%;
+    left: 65%;
+    background-image: url(images/assasin\ creed.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#newchild3:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#newchild3 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Dead Space Section*/
+
+#newchild4 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 265%;
+    left: 15%;
+    background-image: url(images/dead\ space.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#newchild4:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#newchild4 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Forspoken Section*/
+
+#newchild5 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 265%;
+    left: 40%;
+    background-image: url(images/forspoken.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#newchild5:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#newchild5 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Deliver us mars Section*/
+
+#newchild6 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 265%;
+    left: 65%;
+    background-image: url(images/deliver\ us\ mars.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#newchild6:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#newchild6 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+
+/*---------------------------------------------------------About us page----------------------------------------------------------------*/
+
+.aboutbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/forspoken\ banner.jpg) no-repeat;
+}
+
+.forspokenbannertext {
+    position: absolute;
+    top: 40%;
+    left: 21.2%;
+}
+
+.forspokenbannertext h1 {
+    color: white;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+.forspokenbannertext2 {
+    position: absolute;
+    top: 47%;
+    left: 22%;
+}
+
+.forspokenbannertext2 h1 {
+    color: #FF5405;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+.Ahri {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    width: 1164px;
+    height: 687px;
+    background: url(images/Ahri.png);
+    background-repeat: no-repeat;
+}
+
+.aboutlogo {
+    position: absolute;
+    top: 80%;
+    left: 22%;
+    height: 80px;
+    width: 300px;
+}
+
+.aboutlogo h1 {
+    text-decoration: none;
+    color: #FF5405;
+    font-family: gigasans;
+}
+
+.description {
+    width: 500px;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+
+
+}
+
+.description p {
+    color: white;
+    font-family: cosmata regular;
+    text-align: center;
+    font-size: 2vh;
+
+}
+
+.description h1 {
+    color: #FF5405;
+    font-family: cosmata regular;
+    text-align: center;
+    font-size: 2vh;
+
+}
+
+.forgamers {
+    position: absolute;
+    top: -6%;
+    left: 30.5%;
+}
+
+.aboutfooter {
+    position: absolute;
+    background-color: #2e2e2e;
+    width: 1903px;
+    height: 350px;
+    top: 250%;
+}
+
+.sponsors {
+    position: absolute;
+    top: 174%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Malberg;
+    font-size: 4vh;
+
+}
+
+
+/*Light Box Section*/
+
+.row {
+    position: absolute;
+    top: 210%;
+    left: 50.9%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+
+}
+
+.row>.column {
+    padding: 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    float: left;
+    width: 18%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.column:hover {
+    transform: scale(1.1);
+}
+
+
+.column img {
+    width: 200px;
+    height: 200px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*--------------------------------------------------------------------------------------Best Seller Page--------------------------------------------------------------------------------*/
+
+/*Top Banner*/
+
+.bestsellerbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/marsbg.jpg) no-repeat;
+}
+
+.marsbannertext {
+    position: absolute;
+    top: 40%;
+    left: 21.2%;
+}
+
+.marsbannertext h1 {
+    color: white;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+.marsbannertext2 {
+    position: absolute;
+    top: 47%;
+    left: 23.7%;
+}
+
+.marsbannertext2 h1 {
+    color: #FF5405;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+/*Best Seller Footer*/
+
+.bestsellerfooter {
+    position: absolute;
+    background-color: #2e2e2e;
+    width: 1903px;
+    height: 350px;
+    top: 200%;
+}
+
+/*Minecraft Section*/
+
+#child7 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 160%;
+    left: 15%;
+    background-image: url(images/minecraft.png);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#child7:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#child7 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Among Us Section*/
+
+#child8 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 160%;
+    left: 40%;
+    background-image: url(images/amongus.png);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#child8:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#child8 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Grand Theft Auto V Section*/
+
+#child9 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 160%;
+    left: 65%;
+    background-image: url(images/gta.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#child9:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#child9 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*--------------------------------------------------------------------------------------New Releases Page--------------------------------------------------------------------------------*/
+
+/*Top Banner*/
+
+.newreleasesbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/minecraft.png) no-repeat;
+}
+
+.minecraftbannertext {
+    position: absolute;
+    top: 40%;
+    left: 21.2%;
+}
+
+.minecraftbannertext h1 {
+    color: white;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+.minecraftbannertext2 {
+    position: absolute;
+    top: 47%;
+    left: 22%;
+}
+
+.minecraftbannertext2 h1 {
+    color: #FF5405;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+.NNewReleasesText {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+}
+
+.NNewReleasesText h3 {
+    color: white;
+    font-size: 4vh;
+    font-family: Malberg;
+    letter-spacing: 0.5px;
+}
+
+/*New Releases Footer*/
+
+.newreleasesfooter {
+    position: absolute;
+    background-color: #2e2e2e;
+    width: 1903px;
+    height: 350px;
+    top: 200%;
+}
+
+/*Resident evil 4 (New Releaese) Section*/
+
+
+#Nnewchild1 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    background-image: url(images/res4.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#Nnewchild1:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#Nnewchild1 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Hogwarts Legacy Section*/
+
+#Nnewchild2 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    background-image: url(images/hogwarts.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#Nnewchild2:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#Nnewchild2 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Assasin creed Section*/
+
+#Nnewchild3 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 90%;
+    left: 65%;
+    background-image: url(images/assasin\ creed.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#Nnewchild3:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#Nnewchild3 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Dead Space Section*/
+
+#Nnewchild4 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 125%;
+    left: 15%;
+    background-image: url(images/dead\ space.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#Nnewchild4:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#Nnewchild4 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Forspoken Section*/
+
+#Nnewchild5 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 125%;
+    left: 40%;
+    background-image: url(images/forspoken.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#Nnewchild5:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#Nnewchild5 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Deliver us mars Section*/
+
+#Nnewchild6 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 125%;
+    left: 65%;
+    background-image: url(images/deliver\ us\ mars.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#Nnewchild6:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#Nnewchild6 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*A Plague Tale Requiem Section*/
+
+#Nnewchild7 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 160%;
+    left: 15%;
+    background-image: url(images/plague\ tale.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#Nnewchild7:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#Nnewchild7 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Sifu Section*/
+
+#Nnewchild8 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 160%;
+    left: 40%;
+    background-image: url(images/sifu.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#Nnewchild8:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#Nnewchild8 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*Shadow Of The Tomb Raider Section*/
+
+#Nnewchild9 {
+    width: 377.33px;
+    height: 250px;
+    position: absolute;
+    top: 160%;
+    left: 65%;
+    background-image: url(images/tombraider.jpg);
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: 377.33px 195.19px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+
+}
+
+
+#Nnewchild9:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#Nnewchild9 img {
+    width: 300px;
+    height: 172.19px;
+}
+
+/*--------------------------------------------------------------------------------------Contact Page--------------------------------------------------------------------------------*/
+
+/*Top Banner*/
+
+.contactbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/tombraider\ banner.jpg) no-repeat;
+}
+
+.tombraiderbannertext {
+    position: absolute;
+    top: 40%;
+    left: 21.2%;
+}
+
+.tombraiderbannertext h1 {
+    color: white;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+.tombraiderbannertext2 {
+    position: absolute;
+    top: 47%;
+    left: 27%;
+}
+
+.tombraiderbannertext2 h1 {
+    color: #FF5405;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+/*Contact Footer*/
+
+.contactfooter {
+    position: absolute;
+    background-color: #2e2e2e;
+    width: 1903px;
+    height: 350px;
+    top: 180%;
+}
+
+/*Contact multi background*/
+
+.AlixSteve {
+    position: absolute;
+    top: 100%;
+    left: 67%;
+    width: 500px;
+    height: 500px;
+    background-image: url(images/Alix.png), url(images/Steve.png);
+    background-size: 250px 300px;
+    background-position: right top, left top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+/*Title*/
+.fillform {
+    position: absolute;
+    top: 72%;
+    left: 48.7%;
+    transform: translate(-50%, -50%);
+}
+
+.textanimation {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: Malberg;
+    animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+    opacity: 0;
+}
+
+/*Contact form*/
+
+.formcontent {
+    position: absolute;
+    top: 32%;
+    left: 44.2%;
+    transform: translate(-50%, 50%);
+}
+
+/*form input style*/
+
+.formcontent input[type=text] {
+    width: 150%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: #FF5405 solid 3px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #2d2a2e;
+    font-family: Malberg;
+    color: white;
+
+}
+
+textarea {
+    width: 150%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #FF5405;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #2d2a2e;
+    font-family: Malberg;
+    color: white;
+}
+
+label {
+    color: white;
+    font-size: 16px;
+    font-family: Malberg;
+}
+
+input[type=submit] {
+    font-size: 20px;
+    border-radius: 30px;
+    border-width: 30px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    border: solid 3px;
+    color: #FF5405;
+    background-color: #2d2a2e;
+    cursor: pointer;
+
+
+}
+
+input[type=submit]:hover {
+    background-color: #FF5405;
+    color: #2d2a2e;
+}
+
+.formcontent ::placeholder {
+    color: rgb(188, 188, 188);
+}
+
+.sub {
+    position: absolute;
+    top: 99%;
+    left: 51%;
+}
+
+/*To Show message error*/
+.error {
+    color: red;
+    font-size: 110%;
+    font-family: cosmata regular;
+}
+
+/*-----------------------------------------------------------------------------------------------Reviews Page-----------------------------------------------------------------------------------------*/
+
+/*Top Banner*/
+
+.reviewsbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/plague\ tale\ banner.jpg);
+    background-repeat: no-repeat;
+}
+
+.plaguetalebannertext {
+    position: absolute;
+    top: 40%;
+    left: 21.2%;
+}
+
+.plaguetalebannertext h1 {
+    color: white;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+.plaguetalebannertext2 {
+    position: absolute;
+    top: 47%;
+    left: 25.9%;
+}
+
+.plaguetalebannertext2 h1 {
+    color: #FF5405;
+    font-family: Virtuos;
+    letter-spacing: 0.5px;
+    font-size: 4vh;
+
+
+}
+
+/*Reviews Footer*/
+
+.reviewsfooter {
+    position: absolute;
+    background-color: #2e2e2e;
+    width: 1903px;
+    height: 350px;
+    top: 300%;
+}
+
+/*Reviews Section*/
+
+/*Common reviews style*/
+
+.profilephoto {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 80px;
+    height: 80px;
+    border-radius: 150px;
+    background-image: url(images/small\ G.png);
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-color: #000000;
+}
+
+.username {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    font-family: cosmata regular;
+    color: white;
+    font-size: 5vh;
+}
+
+.userreviews {
+    position: absolute;
+    top: 75%;
+    left: 45.5%;
+    color: white;
+    font-family: Malberg;
+    font-size: 4vh;
+}
+
+/*Review 1 Section*/
+
+.review1 {
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    width: 600px;
+    height: 500px;
+    background-color: #2d2a2e;
+    transition: transform 0.3s;
+}
+
+.review1:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#reviewtext1 {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 500px;
+}
+
+#reviewtext1 p {
+    color: white;
+    font-family: cosmata regular;
+    font-size: 2.8vh;
+    text-align: left;
+}
+
+#rate1 {
+    position: absolute;
+    top: 87%;
+    left: 70%;
+    background: url(images/5star.png);
+    background-repeat: no-repeat;
+    background-size: 150px 35px;
+    width: 150px;
+    height: 35px;
+
+}
+
+/*Review 2 Section*/
+
+.review2 {
+    position: absolute;
+    top: 90%;
+    left: 55%;
+    width: 600px;
+    height: 500px;
+    background-color: #2d2a2e;
+    transition: transform 0.3s;
+}
+
+.review2:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#reviewtext2 {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 500px;
+}
+
+#reviewtext2 p {
+    color: white;
+    font-family: cosmata regular;
+    font-size: 2.8vh;
+    text-align: left;
+}
+
+#rate2 {
+    position: absolute;
+    top: 87%;
+    left: 70%;
+    background: url(images/4star.png);
+    background-repeat: no-repeat;
+    background-size: 150px 35px;
+    width: 150px;
+    height: 35px;
+
+}
+
+/*Review 3 Section*/
+
+.review3 {
+    position: absolute;
+    top: 160%;
+    left: 15%;
+    width: 600px;
+    height: 500px;
+    background-color: #2d2a2e;
+    transition: transform 0.3s;
+}
+
+.review3:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#reviewtext3 {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 500px;
+}
+
+#reviewtext3 p {
+    color: white;
+    font-family: cosmata regular;
+    font-size: 2.8vh;
+    text-align: left;
+}
+
+#rate3 {
+    position: absolute;
+    top: 87%;
+    left: 70%;
+    background: url(images/5star.png);
+    background-repeat: no-repeat;
+    background-size: 150px 35px;
+    width: 150px;
+    height: 35px;
+
+}
+
+/*Review 4 Section*/
+
+.review4 {
+    position: absolute;
+    top: 160%;
+    left: 55%;
+    width: 600px;
+    height: 500px;
+    background-color: #2d2a2e;
+    transition: transform 0.3s;
+}
+
+.review4:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#reviewtext4 {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 500px;
+}
+
+#reviewtext4 p {
+    color: white;
+    font-family: cosmata regular;
+    font-size: 2.8vh;
+    text-align: left;
+}
+
+#rate4 {
+    position: absolute;
+    top: 87%;
+    left: 70%;
+    background: url(images/5star.png);
+    background-repeat: no-repeat;
+    background-size: 150px 35px;
+    width: 150px;
+    height: 35px;
+
+}
+
+/*Review 5 Section*/
+
+.review5 {
+    position: absolute;
+    top: 230%;
+    left: 15%;
+    width: 600px;
+    height: 500px;
+    background-color: #2d2a2e;
+    transition: transform 0.3s;
+}
+
+.review5:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#reviewtext5 {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 500px;
+}
+
+#reviewtext5 p {
+    color: white;
+    font-family: cosmata regular;
+    font-size: 2.8vh;
+    text-align: left;
+}
+
+#rate5 {
+    position: absolute;
+    top: 87%;
+    left: 70%;
+    background: url(images/5star.png);
+    background-repeat: no-repeat;
+    background-size: 150px 35px;
+    width: 150px;
+    height: 35px;
+
+}
+
+/*Review 6 Section*/
+
+.review6 {
+    position: absolute;
+    top: 230%;
+    left: 55%;
+    width: 600px;
+    height: 500px;
+    background-color: #2d2a2e;
+    transition: transform 0.3s;
+}
+
+.review6:hover {
+    transform: scale(1.1);
+    box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(255, 84, 5, 0.63);
+}
+
+#reviewtext6 {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    width: 500px;
+}
+
+#reviewtext6 p {
+    color: white;
+    font-family: cosmata regular;
+    font-size: 2.8vh;
+    text-align: left;
+}
+
+#rate6 {
+    position: absolute;
+    top: 87%;
+    left: 70%;
+    background: url(images/5star.png);
+    background-repeat: no-repeat;
+    background-size: 150px 35px;
+    width: 150px;
+    height: 35px;
+
+}
+
+/*----------------------------------------------------------------------------------------------Resident Evil 4 Page--------------------------------------------------------------------------------------*/
+
+/*Game Footer*/
+
+.gamefooter {
+    position: absolute;
+    background-color: #2e2e2e;
+    width: 1903px;
+    height: 350px;
+    top: 344%;
+}
+
+
+/*game image container*/
+.res4container {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/res4.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*game details container*/
+.gamedetails {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    width: 650px;
+    height: 800px;
+    background: rgba(28, 27, 29, 0.2);
+    border-radius: 16px;
+
+    backdrop-filter: blur(10px);
+}
+
+/*game name text*/
+.newgamename {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Virtuos;
+    font-size: 4vh;
+    white-space: nowrap;
+}
+
+/*rounded box container*/
+.col {
+
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    width: 500px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    color: white;
+    font-family: cosmata regular;
+    display: inline;
+    background-image: linear-gradient(to bottom, rgba(141, 135, 135, 0.52), rgba(255, 84, 5, 0.73)),
+        url('images/res4.jpg');
+    backdrop-filter: blur(10px);
+
+}
+
+/*rounded box content*/
+.col .t1 {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+
+}
+
+.col .t2 {
+    position: absolute;
+    top: 3%;
+    left: 40%;
+}
+
+.col .t3 {
+    position: absolute;
+    width: 200px;
+    top: 3%;
+    left: 68%;
+}
+
+/*Game Price*/
+
+.newgameprice {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FF5405;
+    font-family: Virtuos;
+    font-size: 4vh;
+}
+
+/*Buy button*/
+
+.buynow {
+    width: 450px;
+    height: 80px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #FF5405;
+    border-radius: 25px;
+    font-family: cosmata;
+    font-size: 4vh;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    line-height: 80px;
+    transition: 0.3s;
+}
+
+.buynow:hover {
+    background-color: #e34c06;
+}
+
+/*Game specs container*/
+
+.gamespecs {
+
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    font-family: cosmata regular;
+    font-size: 2vh;
+    color: rgb(109, 109, 109);
+    line-height: 30px;
+
+}
+
+/*Game specs text*/
+
+.gamespecsdetails {
+    position: absolute;
+    top: 60%;
+    left: 37%;
+    font-family: cosmata regular;
+    font-size: 2vh;
+    color: white;
+    line-height: 30px;
+}
+
+/*About game container*/
+
+.aboutgame {
+    position: absolute;
+    top: 105.5%;
+    left: 15%;
+    color: white;
+    font-family: Malberg;
+    font-size: 4vh;
+}
+
+/*game story*/
+
+.gamestory {
+    width: 700px;
+    position: absolute;
+    top: 110%;
+    left: 15%;
+    color: rgb(109, 109, 109);
+    font-family: cosmata regular;
+    font-size: 2vh;
+
+}
+
+.gamestory p::first-letter {
+    color: #FF5405;
+    font-size: 2.4vh;
+}
+
+/*Visuals text*/
+
+.visuals {
+    position: absolute;
+    top: 140%;
+    left: 15%;
+    color: white;
+    font-family: Malberg;
+    font-size: 4vh;
+}
+
+/*Visuals video*/
+
+.res4visualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.res4visualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/res4V1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.res4visualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/res4V2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.res4visualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/res4V3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.res4visualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/res4V4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.res4visualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/res4V5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*Config Text*/
+
+.configtext {
+    position: absolute;
+    top: 285%;
+    left: 15%;
+    color: white;
+    font-family: Malberg;
+    font-size: 4vh;
+}
+
+/*Minimum Text*/
+
+.minimumtext {
+    position: absolute;
+    top: 293%;
+    left: 15%;
+    color: #FF5405;
+    font-family: Malberg;
+    font-size: 3vh;
+}
+
+/*Recommended Text*/
+
+.recommendtext {
+    position: absolute;
+    top: 293%;
+    left: 52%;
+    color: #FF5405;
+    font-family: Malberg;
+    font-size: 3vh;
+}
+
+/*Minimum Config*/
+
+.config {
+    color: rgb(109, 109, 109);
+    font-family: Art;
+    position: absolute;
+    top: 300%;
+    left: 15%;
+    width: 10%;
+    column-count: 2;
+    column-gap: 50px;
+    white-space: nowrap;
+}
+
+.config .minimumvalues {
+    break-before: column;
+}
+
+/*Recommended Config*/
+
+.config2 {
+    color: rgb(109, 109, 109);
+    font-family: Art;
+    position: absolute;
+    top: 300%;
+    left: 52%;
+    width: 10%;
+    column-count: 2;
+    column-gap: 50px;
+    white-space: nowrap;
+}
+
+.config .recommendvalues {
+    break-before: column;
+}
+
+/*self correcting quiz button*/
+
+.quizbutton {
+    position: absolute;
+    top: 330%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    border-radius: 30px;
+    border-width: 30px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    border: solid 3px;
+    color: #FF5405;
+    background-color: #2d2a2e;
+    cursor: pointer;
+}
+
+.quizbutton:hover {
+    background-color: #FF5405;
+    color: #2d2a2e;
+}
+
+/*-------------------------------------------------------------------------------Elden Ring Page--------------------------------------------------------------------------------*/
+
+.eldenbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/elden\ ring\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.eldenringcontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/elden\ ring.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.eldenringvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.eldenringvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/eldenV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.eldenringvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/eldenV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.eldenringvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/eldenV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.eldenringvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/eldenV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.eldenringvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/eldenV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Gof Of War Page--------------------------------------------------------------------------------*/
+
+.gowbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/godofwar\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.gowcontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/god\ of\ war.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.gowvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.gowvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/gowV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.gowvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/gowV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.gowvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/gowV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.gowvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/gowV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.gowvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/gowV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Last Of Us II Page--------------------------------------------------------------------------------*/
+
+.loubg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/lastofus\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.loucontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/lastofus.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.louvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.louvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/louV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.louvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/louV2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.louvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/louV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.louvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/louV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.louvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/louV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+
+/*-------------------------------------------------------------------------------Call of duty modern warfer II Page--------------------------------------------------------------------------------*/
+
+.codbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/cod\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.codcontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/cod.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.codvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.codvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/codV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.codvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/codV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.codvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/codV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.codvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/codV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.codvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/codV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Fifa 23 Page--------------------------------------------------------------------------------*/
+
+.fifabg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/fifa\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.fifacontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/fifa.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.fifavisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.fifavisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/fifaV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.fifavisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/fifaV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.fifavisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/fifaV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.fifavisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/fifaV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.fifavisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/fifaV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Minecraft Page--------------------------------------------------------------------------------*/
+
+.minecraftbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/minecraft\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.minecraftcontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/minecraft.png);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.minecraftvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.minecraftvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/minecraftV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.minecraftvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/minecraftV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.minecraftvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/minecraftV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.minecraftvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/minecraftV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.minecraftvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/minecraftV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Amoung Us Page--------------------------------------------------------------------------------*/
+
+.amongusbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/Amongus\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.amonguscontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/amongus.png);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.amongusvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.amongusvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/AmoungusV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.amongusvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/AmoungusV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.amongusvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/AmoungusV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.amongusvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/AmoungusV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.amongusvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/AmoungusV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+
+/*-------------------------------------------------------------------------------Grand Theft Auto V Page--------------------------------------------------------------------------------*/
+
+.gtabg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/Gta\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.gtacontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/gta.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.gtavisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.gtavisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/GtaV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.gtavisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/gtaV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.gtavisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/GtaV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.gtavisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/gtaV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.gtavisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/gtaV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Hogwarts Legacy Page--------------------------------------------------------------------------------*/
+
+.hogwartsbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/Hogwarts\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.hogwartscontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/hogwarts.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.hogwartsvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.hogwartsvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/HogwartsV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.hogwartsvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/HogwartsV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.hogwartsvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/HogwartsV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.hogwartsvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/HogwartsV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.hogwartsvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/HogwartsV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+
+/*-------------------------------------------------------------------------------Assassin's Creed Mirage Page--------------------------------------------------------------------------------*/
+
+.assasinbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/assassincreed\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.assasincontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/assasin\ creed.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.assasinvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.assasinvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/AssassincreedV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.assasinvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/AssassincreedV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.assasinvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/AssassincreedV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.assasinvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/AssassincreedV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.assasinvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/AssassincreedV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Dead Space Page--------------------------------------------------------------------------------*/
+
+.deadspacebg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/DeadSpace\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.deadspacecontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/dead\ space.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.deadspacevisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.deadspacevisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/DeadSpaceV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.deadspacevisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/DeadSpaceV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.deadspacevisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/DeadSpaceV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.deadspacevisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/DeadSpaceV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.deadspacevisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/DeadSpaceV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Forspoken Page--------------------------------------------------------------------------------*/
+
+.Forspokenbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/forspoken\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.Forspokencontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/forspoken.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.Forspokenvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.Forspokenvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/ForspokenV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.Forspokenvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/ForspokenV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.Forspokenvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/ForspokenV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.Forspokenvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/ForspokenV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.Forspokenvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/ForspokenV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Deliver Us Mars Page--------------------------------------------------------------------------------*/
+
+.Dumbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/marsbg.jpg) no-repeat;
+}
+
+/*game image container*/
+.Dumcontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/deliver\ us\ mars.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.Dumvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.Dumvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/DumV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.Dumvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/DumV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.Dumvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/DumV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.Dumvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/DumV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.Dumvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/DumV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------A Plague Tale Requiem Page--------------------------------------------------------------------------------*/
+
+.plaguetalebg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/plague\ tale\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.plaguetalecontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/plague\ tale.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.plaguetalevisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.plaguetalevisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/PlagueTaleV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.plaguetalevisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/PlagueTaleV2.png);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.plaguetalevisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/PlagueTaleV3.png);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.plaguetalevisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/PlagueTaleV4.png);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.plaguetalevisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/PlagueTaleV5.png);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Sifu Page--------------------------------------------------------------------------------*/
+
+.sifubg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/sifu\ banner2.jpg) no-repeat;
+}
+
+/*game image container*/
+.sifucontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/sifu.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.sifuvisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.sifuvisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/sifuV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.sifuvisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/sifuV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.sifuvisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/sifuV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.sifuvisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/sifuV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.sifuvisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/sifuV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+/*-------------------------------------------------------------------------------Shadow Of The Tomb Raider Page--------------------------------------------------------------------------------*/
+
+.tombraiderbg {
+    position: absolute;
+    top: 0%;
+    height: 600px;
+    width: 1903px;
+    background: url(images/tombraider\ banner.jpg) no-repeat;
+}
+
+/*game image container*/
+.tombraidercontainer {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 700px;
+    height: 400px;
+    border-radius: 35px;
+    background-image: url(images/tombraider.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+
+}
+
+/*Visuals video*/
+
+.tombraidervisualvideo {
+    border-radius: 20px;
+    position: absolute;
+    top: 150%;
+    left: 15%;
+    overflow: hidden;
+}
+
+/*Images under visual*/
+
+.tombraidervisualimages .img1 {
+    border-radius: 20px;
+    width: 650px;
+    height: 385px;
+    position: absolute;
+    top: 237%;
+    left: 15%;
+    background: url(images/TombRaiderV1.jpg);
+    background-repeat: no-repeat;
+    background-size: 650px 385px;
+}
+
+.tombraidervisualimages .img2 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 68.3%;
+    background: url(images/TombRaiderV2.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.tombraidervisualimages .img3 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 237%;
+    left: 51.5%;
+    background: url(images/TombRaiderV3.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.tombraidervisualimages .img4 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 68.3%;
+    background: url(images/TombRaiderV4.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
+
+.tombraidervisualimages .img5 {
+    border-radius: 20px;
+    width: 270px;
+    height: 170px;
+    position: absolute;
+    top: 260%;
+    left: 51.5%;
+    background: url(images/TombRaiderV5.jpg);
+    background-repeat: no-repeat;
+    background-size: 270px 170px;
+}
